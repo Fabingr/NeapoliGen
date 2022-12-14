@@ -1,0 +1,8 @@
+
+<p><span *ngFor="let topping of availableToppings"> {{topping.name}}</span><p>
+
+
+<ul>
+  <li *ngFor="let pizza of ranking">{{pizza.name}} ({{pizza.toppingsStr}}) {{pizza.hitRate > 0 ? pizza.hitRate : ""}}</li>
+</ul>
+
