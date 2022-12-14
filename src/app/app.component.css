@@ -1,6 +1,10 @@
-
+html{
+  margin:0;
+  padding:0;
+  width: 50%;
+}
 .example-viewport {
-  height: 500px;
+  height: 400px;
   width: 300px;
   border: 1px solid black;
   margin: 12px;
@@ -10,6 +14,7 @@
   height: 50px;
 }
 
+
 .example-spacer {
   flex: 1 1 auto;
 }
@@ -18,7 +23,26 @@
   display:flex;
   flex-direction: row;
   flex-wrap: wrap;
-  justify-content: space-around;
+  justify-content: center;
+}
+
+.rankingitem{
+  display: flex;
+}
+
+mat-progress-bar {
+  width: 30px;
+  height: 30px;
+}
+
+.ranking{
+  border: 5px solid;
+  margin: auto;
+  width: 50%;
+  padding: 10px;
+}
+app-ranking{
+  position: center;
 }
 /*.example-viewport {
   height: 200px;

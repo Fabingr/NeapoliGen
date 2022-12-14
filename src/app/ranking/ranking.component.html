@@ -1,8 +1,22 @@
 
-<p><span *ngFor="let topping of availableToppings"> {{topping.name}}</span><p>
+<div class="dings">
+<section class="toppings">
+  <mat-card>
+    <mat-card-content>
+  <span *ngFor="let topping of availableToppings"> {{topping.name}}</span>
+  </mat-card-content>
+</mat-card>
+</section>
 
 
+<section class="ranking">
 <ul>
-  <li *ngFor="let pizza of ranking">{{pizza.name}} ({{pizza.toppingsStr}}) {{pizza.hitRate > 0 ? pizza.hitRate : ""}}</li>
+  <li class="rankingitem" *ngFor="let pizza of ranking">{{pizza.name}} ({{pizza.toppingsStr}}) <!--{{pizza.hitRate > 0 ? pizza.hitRate : ""}}-->
+    <mat-progress-bar class="mat-progress-bar" mode="determinate" [value]="pizza.hitRate * 100"></mat-progress-bar>
+    <p></p>
+  </li>
 </ul>
+</section>
+
+</div>
 

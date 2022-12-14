@@ -4,55 +4,82 @@
     <input type="checkbox" (change)="toggleExcludeTopping(i)">
   </li>
 </ul>-->
+
 <p>
-  <mat-toolbar>
-    <span>My Application</span>
+  <mat-toolbar color="primary">
+    <button mat-icon-button class="example-icon" aria-label="Example icon-button with menu icon">
+      <mat-icon>menu</mat-icon>
+    </button>
+    <span>NeapoliGen</span>
+    <span class="example-spacer"></span>
+    <button mat-icon-button class="example-icon favorite-icon" aria-label="Example icon-button with heart icon">
+      <mat-icon>favorite</mat-icon>
+    </button>
+    <button mat-icon-button class="example-icon" aria-label="Example icon-button with share icon">
+      <mat-icon>share</mat-icon>
+    </button>
   </mat-toolbar>
 </p>
 
 <section class="listscontainer">
   <div class="list">
+    <mat-card>
+      <mat-card-content>
     <mat-list dense role="list">
       <cdk-virtual-scroll-viewport itemSize="50" class="example-viewport">
         <mat-list-item *ngFor="let topping of allToppings, let i = index">
           <p><mat-checkbox (change)="toggleTopping(i)">{{topping.name}}</mat-checkbox></p>
-          <input type="checkbox" (change)="toggleExcludeTopping(i)">
+          <!--<input type="checkbox" (change)="toggleExcludeTopping(i)">-->
         </mat-list-item>
       </cdk-virtual-scroll-viewport>
     </mat-list>
+      </mat-card-content>
+    </mat-card>
   </div>
 
   <div class="list">
+    <mat-card>
+      <mat-card-content>
     <mat-list dense role="list">
       <cdk-virtual-scroll-viewport itemSize="50" class="example-viewport">
         <mat-list-item *ngFor="let topping of allToppings, let i = index">
           <p><mat-checkbox (change)="toggleTopping(i)">{{topping.name}}</mat-checkbox></p>
-          <input type="checkbox" (change)="toggleExcludeTopping(i)">
+          <!--<input type="checkbox" (change)="toggleExcludeTopping(i)">-->
         </mat-list-item>
       </cdk-virtual-scroll-viewport>
     </mat-list>
+      </mat-card-content>
+    </mat-card>
   </div>
 
   <div class="list">
+    <mat-card>
+      <mat-card-content>
     <mat-list dense role="list">
       <cdk-virtual-scroll-viewport itemSize="50" class="example-viewport">
         <mat-list-item *ngFor="let topping of allToppings, let i = index">
           <p><mat-checkbox (change)="toggleTopping(i)">{{topping.name}}</mat-checkbox></p>
-          <input type="checkbox" (change)="toggleExcludeTopping(i)">
+          <!--<input type="checkbox" (change)="toggleExcludeTopping(i)">-->
         </mat-list-item>
       </cdk-virtual-scroll-viewport>
     </mat-list>
+      </mat-card-content>
+    </mat-card>
   </div>
 
   <div class="list">
+    <mat-card>
+      <mat-card-content>
     <mat-list dense role="list">
       <cdk-virtual-scroll-viewport itemSize="50" class="example-viewport">
         <mat-list-item *ngFor="let topping of allToppings, let i = index">
           <p><mat-checkbox (change)="toggleTopping(i)">{{topping.name}}</mat-checkbox></p>
-          <input type="checkbox" (change)="toggleExcludeTopping(i)">
+          <!--<input type="checkbox" (change)="toggleExcludeTopping(i)">-->
         </mat-list-item>
       </cdk-virtual-scroll-viewport>
     </mat-list>
+    </mat-card-content>
+    </mat-card>
   </div>
 
 </section>
