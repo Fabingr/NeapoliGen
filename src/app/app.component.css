@@ -15,8 +15,17 @@ html{
 }
 
 
+.example-icon {
+  padding: 0 14px;
+}
 .example-spacer {
   flex: 1 1 auto;
+}
+.mat-toolbar-row{
+  justify-content: center;
+}
+.list{
+  margin: 1% 5px 0px 5px;
 }
 
 .listscontainer{
@@ -44,11 +53,3 @@ mat-progress-bar {
 app-ranking{
   position: center;
 }
-/*.example-viewport {
-  height: 200px;
-  width: 100%;
-  border: 1px solid black;
-}
-.example-alternate {
-  background: rgba(127, 127, 127, 0.3);
-}*/

@@ -13,6 +13,9 @@ import {MatCardModule} from "@angular/material/card";
 import {MatToolbarModule} from "@angular/material/toolbar";
 import {MatIconModule} from "@angular/material/icon";
 import {MatProgressBarModule} from "@angular/material/progress-bar";
+import {FormsModule} from "@angular/forms";
+import {MatSlideToggleModule} from "@angular/material/slide-toggle";
+import {MatChipsModule} from "@angular/material/chips";
 
 @NgModule({
   declarations: [
@@ -30,7 +33,12 @@ import {MatProgressBarModule} from "@angular/material/progress-bar";
     MatCardModule,
     MatToolbarModule,
     MatIconModule,
-    MatProgressBarModule
+    MatProgressBarModule,
+    FormsModule,
+    MatSlideToggleModule,
+    MatChipsModule,
+
+
   ],
   providers: [],
   bootstrap: [AppComponent]

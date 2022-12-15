@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
-import {PizzasService, Topping, Pizza} from "./pizzas.service";
+import {PizzasService, Topping} from "./pizzas.service";
+import {MatSlideToggleChange} from "@angular/material/slide-toggle";
 
 @Component({
   selector: 'app-root',
@@ -7,14 +8,17 @@ import {PizzasService, Topping, Pizza} from "./pizzas.service";
   styleUrls: ['./app.component.css'],
 })
 export class AppComponent {
+  popup: boolean = false;
   title = 'PizzaNeapoliGen';
   allToppings : Topping[] = [];
+  availableToppings: Topping[] = [];
   constructor(
     private lieferdienst: PizzasService
   ) {}
 
   ngOnInit(): void{
     this.allToppings = this.lieferdienst.allToppings
+    this.availableToppings = this.lieferdienst.availableToppings
     this.lieferdienst.crossCheckToppings()
   }
 
@@ -22,18 +26,26 @@ export class AppComponent {
     this.lieferdienst.bakePizzas();
   }
 
-  toggleTopping(index : number){
-    this.lieferdienst.stockTopping(index)
+  changeTopping(){
+    this.availableToppings = this.allToppings.filter(x => x.isAvailable === true)
+      this.lieferdienst.updateToppings()
   }
 
-  toggleExcludeTopping(index : number){
-    this.lieferdienst.removeTopping(index)
+  listClick(i: number, e: MatSlideToggleChange) {
+    if(e.checked){
+      this.allToppings[i].isExcluded = false
+      this.lieferdienst.updateToppings()
+    }else{
+      this.allToppings[i].isExcluded = true
+      this.lieferdienst.updateToppings()
+    }
+  }
+
+  chipClick(i: number) {
+      this.allToppings[i].isAvailable = false
+      this.lieferdienst.updateToppings()
   }
 }
-
-// exlude topping from query moz tomato,..
-// i have these toppings available-> i want to make these pizzas -> these are the toppings im missing -> I already have:
-// i want these toppings on my pizza -> i want to make these pizzas -> i already have these toppings & these are the toppings im still missing ->Desire
 
 
 

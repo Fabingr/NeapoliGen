@@ -2,6 +2,7 @@ import {EventEmitter, Injectable, Output} from '@angular/core';
 import {RecipesService, Recipe} from "./recipes.service";
 
 
+
 @Injectable({
   providedIn: 'root'
 })
@@ -33,7 +34,8 @@ export class PizzasService {
     {name: 'Chili peppers'},
   ].map(topping => ({
     ...topping,
-    isAvailable: false
+    isAvailable: false,
+    type: "basics"
   }))
 
   bakePizzas(){
@@ -69,38 +71,10 @@ export class PizzasService {
         this.allToppings.push({name: allRequiredToppingsUnique[i], isAvailable: false})}}
   }
 
-  stockTopping(index: number) {
-    if (!this.allToppings[index].isAvailable) {
-      console.log(this.allToppings[index].name + " vefügbar")
-      this.allToppings[index].isAvailable = true;
-      this.updateToppingsEvent.emit()
-      this.updated()
-    } else {
-      console.log(this.allToppings[index].name + " nicht verfügbar")
-      this.allToppings[index].isAvailable = false;
-      this.updateToppingsEvent.emit();
-      this.updated()
-    }
-  }
-
-  removeTopping(index:number) {
-    if (!this.allToppings[index].isExcluded) {
-      console.log(this.allToppings[index].name + "ausgeschlossen")
-      this.allToppings[index].isExcluded = true;
-      console.log(this.pizzas)
-      console.log(this.allToppings)
-      this.updateToppingsEvent.emit()
-      this.updated()
-    } else {
-      console.log(this.allToppings[index].name + "inkludiert")
-      this.allToppings[index].isExcluded = false;
-      this.updateToppingsEvent.emit()
-      this.updated()
-    }
-  }
-
-  updated(){
-    return this.updateToppingsEvent;
+  updateToppings() {
+    console.log("test")
+    this.updateToppingsEvent.emit()
+    return this.updateToppingsEvent
   }
 }
 
@@ -108,6 +82,7 @@ export interface Topping{
   name: string
   isAvailable ?: boolean
   isExcluded ?: boolean
+  type ?: string
 }
 
 export interface Pizza extends Recipe{
