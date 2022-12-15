@@ -1,5 +1,5 @@
 import {EventEmitter, Injectable, Output} from '@angular/core';
-import {RecipesService, Recipe} from "./recipes.service";
+import {RecipesService, Recipe, Topping} from "./recipes.service";
 
 
 
@@ -23,20 +23,9 @@ export class PizzasService {
     toppingsObj: [],
     hitRate: 0
   }))
+  allToppings: Topping[] = this.cookBook.openGlossar()
 
-  allToppings : Topping[] = [
-    {name:'Tomato sauce'},
-    {name: 'Mozzarella'},
-    {name: 'Onions'},
-    {name: 'Oregano'},
-    {name: 'Broccoli'},
-    {name: 'Garlic'},
-    {name: 'Chili peppers'},
-  ].map(topping => ({
-    ...topping,
-    isAvailable: false,
-    type: "basics"
-  }))
+
 
   bakePizzas(){
     this.pizzas.forEach((item, index) => {item.toppingsObj = this.getToppingsAsObjects(item.toppingsStrArr)})
@@ -68,7 +57,7 @@ export class PizzasService {
     let allRequiredToppingsUnique = [...new Set(allRequiredToppings)];
     for (let i = 0; i < allRequiredToppingsUnique.length; i++) {
       if (this.allToppings.every(e => e.name != allRequiredToppingsUnique[i])){
-        this.allToppings.push({name: allRequiredToppingsUnique[i], isAvailable: false})}}
+        this.allToppings.push({name: allRequiredToppingsUnique[i], isAvailable: false, type:"other"})}}
   }
 
   updateToppings() {
@@ -78,12 +67,6 @@ export class PizzasService {
   }
 }
 
-export interface Topping{
-  name: string
-  isAvailable ?: boolean
-  isExcluded ?: boolean
-  type ?: string
-}
 
 export interface Pizza extends Recipe{
   name: string

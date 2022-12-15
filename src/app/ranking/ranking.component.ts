@@ -1,5 +1,6 @@
 import {Component} from '@angular/core';
-import {PizzasService, Pizza, Topping} from "../pizzas.service";
+import {PizzasService, Pizza} from "../pizzas.service";
+import {Topping} from "../recipes.service";
 
 @Component({
   selector: 'app-ranking',

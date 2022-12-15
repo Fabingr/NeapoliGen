@@ -41,7 +41,7 @@
         <mat-list dense role="list">
           <cdk-virtual-scroll-viewport class="example-viewport" itemSize="50">
             <ng-container *ngFor="let topping of allToppings, let i = index">
-              <mat-list-item [disabled]="allToppings[i].isExcluded">
+              <mat-list-item [disabled]="allToppings[i].isExcluded" *ngIf="allToppings[i].type === 'cheese'">
                 <mat-checkbox (change)="changeTopping()" [(ngModel)]="allToppings[i].isAvailable"
                               name="allToppings-{{i}}">{{topping.name}}&nbsp;&nbsp;</mat-checkbox>
                 <span></span>
@@ -65,7 +65,7 @@
         <mat-list dense role="list">
           <cdk-virtual-scroll-viewport class="example-viewport" itemSize="50">
             <ng-container *ngFor="let topping of allToppings, let i = index">
-              <mat-list-item [disabled]="allToppings[i].isExcluded">
+              <mat-list-item [disabled]="allToppings[i].isExcluded" *ngIf="allToppings[i].type === 'vegetable'">
                 <mat-checkbox (change)="changeTopping()" [(ngModel)]="allToppings[i].isAvailable"
                               name="allToppings-{{i}}">{{topping.name}}&nbsp;&nbsp;</mat-checkbox>
                 <span></span>
@@ -89,7 +89,7 @@
         <mat-list dense role="list">
           <cdk-virtual-scroll-viewport class="example-viewport" itemSize="50">
             <ng-container *ngFor="let topping of allToppings, let i = index">
-              <mat-list-item [disabled]="allToppings[i].isExcluded">
+              <mat-list-item [disabled]="allToppings[i].isExcluded" *ngIf="allToppings[i].type === 'other'">
                 <mat-checkbox (change)="changeTopping()" [(ngModel)]="allToppings[i].isAvailable"
                               name="allToppings-{{i}}">{{topping.name}}&nbsp;&nbsp;</mat-checkbox>
                 <span></span>

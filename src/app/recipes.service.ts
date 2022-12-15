@@ -1,6 +1,7 @@
 import { Injectable } from '@angular/core';
 
 
+
 @Injectable({
   providedIn: 'root'
 })
@@ -273,16 +274,38 @@ export class RecipesService {
   ]
 
 
+  allToppings : Topping[] = [
+    {name:'Tomato Sauce', type: "basics"},
+    {name: 'Mozzarella', type: "cheese"},
+    {name: 'Onions', type: "vegetable"},
+    {name: 'Oregano', type: "basics"},
+    {name: 'Broccoli', type: "vegetable"},
+    {name: 'Garlic', type: "vegetable"},
+    {name: 'Chili Peppers', type: "vegetable"},
+  ].map(topping => ({
+    ...topping,
+    isAvailable: false,
+  }))
+
   constructor() { }
 
   openCookBook(){
     return this.recipes
   }
   openGlossar(){
+    return this.allToppings
   }
 }
 
 export interface Recipe{
   name: string,
   toppingsStrArr: string[];
+}
+
+
+export interface Topping{
+  name: string
+  isAvailable ?: boolean
+  isExcluded ?: boolean
+  type ?: string
 }

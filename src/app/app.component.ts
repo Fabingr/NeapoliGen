@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
-import {PizzasService, Topping} from "./pizzas.service";
+import {PizzasService} from "./pizzas.service";
 import {MatSlideToggleChange} from "@angular/material/slide-toggle";
+import {Topping} from "./recipes.service";
 
 @Component({
   selector: 'app-root',
