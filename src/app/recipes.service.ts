@@ -1,7 +1,5 @@
 import { Injectable } from '@angular/core';
 
-
-
 @Injectable({
   providedIn: 'root'
 })
@@ -264,7 +262,6 @@ export class RecipesService {
     {name:'Onion', type: "basics"},
     {name:'Black Pepper', type: "basics"},
 
-
     {name:'Broccoli', type: "vegetable"},
     {name:'Chili Peppers', type: "vegetable"},
     {name:'Olives', type: "vegetable"},
@@ -322,7 +319,6 @@ export class RecipesService {
     {name:'Grilled Vegetables', type: "other"},
     {name:'Truffle Oil', type: "other"},
 
-
   ].map(topping => ({
     ...topping,
     isAvailable: false,
@@ -342,7 +338,6 @@ export interface Recipe{
   name: string,
   toppingsStrArr: string[];
 }
-
 
 export interface Topping{
   name: string

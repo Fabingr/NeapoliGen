@@ -3,6 +3,7 @@ html{
   padding:0;
   width: 50%;
 }
+
 .example-viewport {
   height: 400px;
   width: 270px;
@@ -14,19 +15,20 @@ html{
   height: 50px;
 }
 
-
 .example-icon {
   padding: 0 14px;
 }
+
 .example-spacer {
   flex: 1 1 auto;
 }
+
 .mat-toolbar-row{
   justify-content: center;
 }
+
 .list{
   margin: 1% 0px 0px 0px;
-
 }
 
 .listscontainer{
@@ -51,6 +53,7 @@ mat-progress-bar {
   width: 50%;
   padding: 10px;
 }
+
 app-ranking{
   position: center;
 }

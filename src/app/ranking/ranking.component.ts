@@ -13,10 +13,7 @@ export class RankingComponent {
   excludedToppings: Topping[] = []
   ranking: Pizza[] = [];
 
-  constructor(
-    private lieferdienst: PizzasService,
-  ) {
-  }
+  constructor(private lieferdienst: PizzasService) {}
 
   ngOnInit(): void {
     this.updateRankedList()
@@ -70,9 +67,7 @@ export class RankingComponent {
     let count = pizza.amountOfRequiredToppings
     for (let i = 0; i < pizza.toppingsObj.length; i++) {
       if (pizza.toppingsObj[i].isExcluded) {
-        count -= 1;
-      }
-    }
+        count -= 1;}}
     return count;
   }
 
@@ -87,11 +82,7 @@ export class RankingComponent {
       } else if (pizza.toppingsObj[i].isExcluded) {
         temp2 += "<div class='excl'>" + pizza.toppingsObj[i].name + "</div>" + ",&nbsp;"
       } else {
-        temp3 += pizza.toppingsObj[i].name + ",&nbsp;"
-      }
-    }
-
-    /*strings = strings.slice(0, strings.length - 7) + temp1.slice(0, temp1.length - 7) + temp2.slice(0, temp2.length - 7) + ")"*/
+        temp3 += pizza.toppingsObj[i].name + ",&nbsp;"}}
     strings = (strings + temp1 + temp3 + temp2)
     strings = strings.slice(0, strings.length - 7) + ")"
     return strings

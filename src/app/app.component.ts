@@ -13,9 +13,8 @@ export class AppComponent {
   title = 'PizzaNeapoliGen';
   allToppings : Topping[] = [];
   availableToppings: Topping[] = [];
-  constructor(
-    private lieferdienst: PizzasService
-  ) {}
+
+  constructor(private lieferdienst: PizzasService) {}
 
   ngOnInit(): void{
     this.allToppings = this.lieferdienst.allToppings
@@ -38,8 +37,7 @@ export class AppComponent {
       this.lieferdienst.updateToppings()
     }else{
       this.allToppings[i].isExcluded = true
-      this.lieferdienst.updateToppings()
-    }
+      this.lieferdienst.updateToppings()}
   }
 
   chipClick(i: number) {

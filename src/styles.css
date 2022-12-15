@@ -7,11 +7,12 @@ html, body{
   margin:0;
   padding:0;
 }
-.ranking{
 
+.ranking{
   position: center;
   width:50%;
 }
+
 .toppings{
   width: 100%;
   margin: 1% 0 1% 0;
@@ -25,22 +26,19 @@ html, body{
 .toppingscard{
   min-width: 5%;
 }
-.toppings mat-card-content{
-
-}
 
 .rankingbox{
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
 }
+
 .chip{
   --mdc-chip-elevated-container-color: #ff4081;
 }
 
 .chipexcluded{
   opacity: 12%;
-  /*--mdc-chip-elevated-container-color: yellow;*/
 }
 
 .ava{
@@ -55,10 +53,12 @@ html, body{
   font-size: large;
   color:#3f51b5;
 }
+
 .mdc-card{
   justify-content: center;
   align-items: center;
 }
+
 .mdc-list-item{
  align-items: end  !important;
   align-self: self-start;
@@ -70,6 +70,7 @@ mat-card{
 mat-slide-toggle{
  opacity:10%;
 }
+
 mat-slide-toggle:hover{
   opacity: 100%;
 }

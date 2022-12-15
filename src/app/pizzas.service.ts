@@ -7,25 +7,19 @@ import {RecipesService, Recipe, Topping} from "./recipes.service";
   providedIn: 'root'
 })
 export class PizzasService {
-  availableToppings : Topping[] = [];
-
   @Output()
   updateToppingsEvent = new EventEmitter
-
-  constructor(
-    private cookBook : RecipesService
-  ) {}
+  availableToppings : Topping[] = [];
   recipes: Recipe[] = this.cookBook.openCookBook() as Pizza[]
   pizzas: Pizza[] = this.recipes.map(pizza => ({...pizza,
     get toppingsStr() {return this.toppingsStrArr.map(topping => (topping.toString()))},
     get amountOfRequiredToppings() {return (this.toppingsStrArr).length},
     type: 'Italian',
     toppingsObj: [],
-    hitRate: 0
-  }))
+    hitRate: 0}))
   allToppings: Topping[] = this.cookBook.openGlossar()
 
-
+  constructor(private cookBook : RecipesService) {}
 
   bakePizzas(){
     this.pizzas.forEach((item, index) => {item.toppingsObj = this.getToppingsAsObjects(item.toppingsStrArr)})
@@ -66,7 +60,6 @@ export class PizzasService {
     return this.updateToppingsEvent
   }
 }
-
 
 export interface Pizza extends Recipe{
   name: string
