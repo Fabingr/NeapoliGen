@@ -78,15 +78,21 @@ export class RankingComponent {
 
   rankingString(pizza: Pizza) {
     let strings = "<div class='pizzaname' >" + pizza.name + "</div>" + "&nbsp;&nbsp;&nbsp;(";
+    let temp1 =""
+    let temp2 =""
+    let temp3 =""
     for (let i = 0; i < pizza.toppingsObj.length; i++) {
       if (pizza.toppingsObj[i].isAvailable && !pizza.toppingsObj[i].isExcluded) {
-        strings += "<div class='ava'>" + pizza.toppingsObj[i].name + "</div>" + ",&nbsp;"
+        temp1 += "<div class='ava'>" + pizza.toppingsObj[i].name + "</div>" + ",&nbsp;"
       } else if (pizza.toppingsObj[i].isExcluded) {
-        strings += "<div class='excl'>" + pizza.toppingsObj[i].name + "</div>" + ",&nbsp;"
+        temp2 += "<div class='excl'>" + pizza.toppingsObj[i].name + "</div>" + ",&nbsp;"
       } else {
-        strings += pizza.toppingsObj[i].name + ",&nbsp;"
+        temp3 += pizza.toppingsObj[i].name + ",&nbsp;"
       }
     }
+
+    /*strings = strings.slice(0, strings.length - 7) + temp1.slice(0, temp1.length - 7) + temp2.slice(0, temp2.length - 7) + ")"*/
+    strings = (strings + temp1 + temp3 + temp2)
     strings = strings.slice(0, strings.length - 7) + ")"
     return strings
   }

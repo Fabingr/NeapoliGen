@@ -9,27 +9,27 @@ export class RecipesService {
   recipes: object[] = [
     {
       name: 'Aglio e olio',
-      toppingsStrArr: ['Tomato sauce', 'Garlic', 'Olive oil']
+      toppingsStrArr: ['Tomato Sauce', 'Garlic', 'Olive Oil']
     },
     {
       name: 'Ai Broccoli',
-      toppingsStrArr: ['Tomato sauce', 'Mozzarella', 'Broccoli', 'Garlic', 'Chili peppers', 'Oregano']
+      toppingsStrArr: ['Tomato Sauce', 'Mozzarella', 'Broccoli', 'Garlic', 'Chili Peppers', 'Oregano']
     },
     {
       name: 'Al Salmone',
-      toppingsStrArr: ['Tomato sauce', 'Mozzarella', 'Salmon', 'Garlic']
+      toppingsStrArr: ['Tomato Sauce', 'Mozzarella', 'Salmon', 'Garlic']
     },
     {
       name: 'Alla Vongole',
-      toppingsStrArr: ['Tomato sauce', 'Mozzarella', 'Garlic', 'Small clams', 'Chili powder']
+      toppingsStrArr: ['Tomato Sauce', 'Mozzarella', 'Garlic', 'Clams', 'Chili Powder']
     },
     {
       name: 'Alle Verdure Grigliate',
-      toppingsStrArr: ['Tomato sauce', 'Mozzarella', 'Grilled vegetables']
+      toppingsStrArr: ['Tomato Sauce', 'Mozzarella', 'Grilled Vegetables']
     },
     {
       name: 'Anchovis',
-      toppingsStrArr: ['Tomato Sauce', 'Mozzarella', 'Anchovies', 'Garlic', 'Hot chili peppers']
+      toppingsStrArr: ['Tomato Sauce', 'Mozzarella', 'Anchovies', 'Garlic', 'Chili Peppers']
     },
     {
       name: 'Bianca',
@@ -37,251 +37,292 @@ export class RecipesService {
     },
     {
       name: 'Bolognese',
-      toppingsStrArr: ['Bolognese sauce', 'Mozzarella']
+      toppingsStrArr: ['Bolognese Sauce', 'Mozzarella']
     },
     {
       name: 'Calabrese',
-      toppingsStrArr: ['Tomato sauce', 'Parmigian Reggiano (Parmesan)', 'Tuna', 'Olives', 'Capers', 'Garlic', 'Onion', 'Hot Calabrian chili peppers']
+      toppingsStrArr: ['Tomato Sauce', 'Parmigiano Reggiano', 'Tuna', 'Olives', 'Capers', 'Garlic', 'Onion', 'Chili Peppers']
     },
     {
-      name: 'Calabria (Spianata calabrese piccante)',
-      toppingsStrArr: ['Tomato sauce', 'Mozzarella', 'Spianata calabrese piccante (Hot Italian salami from Calabria)', 'Hot Calabrian chili peppers']
-    },
-    {
-      name: 'Calzone',
-      toppingsStrArr: ['Folded pizza', 'ingredients vary']
+      name: 'Calabria',
+      toppingsStrArr: ['Tomato Sauce', 'Mozzarella', 'Spianata Calabrese', 'Chili Peppers']
     },
     {
       name: 'Caprese',
-      toppingsStrArr: ['Tomato sauce', 'Mozzarella', 'Cherry tomatoes']
+      toppingsStrArr: ['Tomato Sauce', 'Mozzarella', 'Cherry Tomatoes']
     },
     {
       name: 'Capri',
-      toppingsStrArr: ['Tomato sauce', 'Mozzarella', 'Arugula', 'Cherry tomatoes', 'Parmigiano Reggiano (Parmesan)']
+      toppingsStrArr: ['Tomato Sauce', 'Mozzarella', 'Arugula', 'Cherry Tomatoes', 'Parmigiano Reggiano']
     },
     {
       name: 'Capricciosa',
-      toppingsStrArr: ['Tomato sauce', 'Mozzarella', 'Mushrooms', 'Artichokes', 'Cooked ham', 'Olives', 'Olive oil']
+      toppingsStrArr: ['Tomato Sauce', 'Mozzarella', 'Mushrooms', 'Artichokes', 'Prosciutto', 'Olives', 'Olive Oil']
     },
     {
       name: 'Caprina',
-      toppingsStrArr: ['Tomato sauce', 'Goat’s cheese', 'Other ingredients vary and may include the following: Arugula', 'Chili peppers', 'Baby spinach leafes', 'Olives', 'Olive oil']
+      toppingsStrArr: ['Tomato Sauce', 'Goats Cheese', 'Arugula', 'Chili Peppers', 'Spinach', 'Olives', 'Olive Oil']
     },
     {
       name: 'Carbonara',
-      toppingsStrArr: ['Pecorino Romano Cheese', 'Heavy cream', 'Scallions', 'Eggs', 'Black pepper']
+      toppingsStrArr: ['Pecorino Romano', 'Heavy Cream', 'Egg', 'Black Pepper']
     },
     {
       name: 'Carciofi',
-      toppingsStrArr: ['Tomato sauce', 'Mozzarella', 'Artichokes']
+      toppingsStrArr: ['Tomato Sauce', 'Mozzarella', 'Artichokes']
     },
     {
       name: 'Carpaccio',
-      toppingsStrArr: ['Tomato sauce', 'Mozzarella', 'Beef carpaccio', 'Arugula', 'Parmigiano Reggiano (Parmesan)']
+      toppingsStrArr: ['Tomato Sauce', 'Mozzarella', 'Beef carpaccio', 'Arugula', 'Parmigiano Reggiano']
     },
     {
       name: 'Cipolla',
-      toppingsStrArr: ['Tomato sauce', 'Mozzarella', 'Onions', 'Oregano']
+      toppingsStrArr: ['Tomato Sauce', 'Mozzarella', 'Onion', 'Oregano']
     },
     {
       name: 'Contadina',
-      toppingsStrArr: ['Tomato sauce', 'Mozzarella', 'Eggplants', 'Artichokes', 'Garlic', 'Basil']
+      toppingsStrArr: ['Tomato Sauce', 'Mozzarella', 'Eggplant', 'Artichokes', 'Garlic', 'Basil']
     },
     {
       name: 'Con cozze',
-      toppingsStrArr: ['Mussels', 'Garlic', 'Olive oil', 'Parsley']
+      toppingsStrArr: ['Mussels', 'Garlic', 'Olive Oil', 'Parsley']
     },
     {
       name: 'Diavola',
-      toppingsStrArr: ['Tomato sauce', 'Mozzarella', 'Hot Italian salami', 'Hot chili peppers']
+      toppingsStrArr: ['Tomato Sauce', 'Mozzarella', 'Hot Salami', 'Chili Peppers']
     },
     {
       name: 'Etna',
-      toppingsStrArr: ['Tomato sauce', 'Mozzarella', 'Anchovies', 'Capers', 'Olives']
+      toppingsStrArr: ['Tomato Sauce', 'Mozzarella', 'Anchovies', 'Capers', 'Olives']
     },
     {
       name: 'Frutti di Mare',
-      toppingsStrArr: ['Tomato sauce', 'Mozzarella', 'Seafood', 'Clams (Vongole)', 'Tiger prawns and Mussels as Topping']
+      toppingsStrArr: ['Tomato Sauce', 'Mozzarella', 'Clams', 'Prawns', 'Mussels']
     },
     {
       name: 'Funghi',
-      toppingsStrArr: ['Tomato Sauce', 'Mozzarella', 'Fresh mushrooms']
+      toppingsStrArr: ['Tomato Sauce', 'Mozzarella', 'Mushrooms']
     },
     {
       name: 'Gamberetti',
-      toppingsStrArr: ['Tomato sauce', 'Mozzarella', 'Shrimps (Gamberetti)']
+      toppingsStrArr: ['Tomato Sauce', 'Mozzarella', 'Shrimps']
     },
     {
       name: 'Mamma Mia',
-      toppingsStrArr: ['Tomato sauce', 'Mozzarella', 'Tuna', 'Peppers', 'Corn', 'Onions']
+      toppingsStrArr: ['Tomato Sauce', 'Mozzarella', 'Tuna', 'Pepper', 'Corn', 'Onion']
     },
     {
       name: 'Margherita',
-      toppingsStrArr: ['Tomato sauce', 'Mozzarella', 'Olive oil', 'Basil leaves']
+      toppingsStrArr: ['Tomato Sauce', 'Mozzarella', 'Olive Oil', 'Basil']
     },
     {
       name: 'Mari e monte',
-      toppingsStrArr: ['Tomatoes', 'Seafood', 'Champignons', 'Garlic', 'Onion']
+      toppingsStrArr: ['Tomato', 'Shrimps', 'Mussels', 'Mushrooms', 'Garlic', 'Onion']
     },
     {
       name: 'Marinara',
-      toppingsStrArr: ['Marinara sauce', 'Garlic', 'Olive oil', 'Basil', 'Oregano']
+      toppingsStrArr: ['Marinara Sauce', 'Garlic', 'Olive Oil', 'Basil', 'Oregano']
     },
     {
       name: 'Mazza',
-      toppingsStrArr: ['Tomato sauce', 'Mozzarella', 'Bacon', 'Eggs', 'Onions', 'Chili peppers']
+      toppingsStrArr: ['Tomato Sauce', 'Mozzarella', 'Bacon', 'Egg', 'Onion', 'Chili Peppers']
     },
     {
       name: 'Mozzarella',
-      toppingsStrArr: ['Tomato Sauce', 'Buffalo mozzarella']
+      toppingsStrArr: ['Tomato Sauce', 'Buffalo Mozzarella']
     },
     {
       name: 'Napoletana',
-      toppingsStrArr: ['Tomato sauce', 'Mozzarella', 'Anchovies', 'Olive oil']
+      toppingsStrArr: ['Tomato Sauce', 'Mozzarella', 'Anchovies', 'Olive Oil']
     },
     {
       name: 'Napoli',
-      toppingsStrArr: ['Tomato sauce', 'Mozzarella', 'Capers', 'Anchovies', 'Olive oil']
+      toppingsStrArr: ['Tomato Sauce', 'Mozzarella', 'Capers', 'Anchovies', 'Olive Oil']
     },
     {
       name: 'O Sole Mio',
-      toppingsStrArr: ['Tomato sauce', 'Mozzarella', 'Ham', 'Salami', 'Egg', 'Onions']
+      toppingsStrArr: ['Tomato Sauce', 'Mozzarella', 'Prosciutto', 'Salami', 'Egg', 'Onion']
     },
     {
       name: 'Parma (Prosciutto di Parma)',
-      toppingsStrArr: ['Tomato sauce', 'Mozzarella', 'Parma ham', 'Arugula', 'Cherry tomatoes']
+      toppingsStrArr: ['Tomato Sauce', 'Mozzarella', 'Parma Ham', 'Arugula', 'Cherry Tomatoes']
     },
     {
       name: 'Peperoni',
-      toppingsStrArr: ['Tomato sauce', 'Mozzarella', 'Chili peppers']
+      toppingsStrArr: ['Tomato Sauce', 'Mozzarella', 'Chili Peppers']
     },
     {
       name: 'Piccantino',
-      toppingsStrArr: ['Tomato sauce', 'Mozzarella', 'Salame piccantino']
-    },
-    {
-      name: 'Pizza al taglio (al trancio)',
-      toppingsStrArr: ['the dough is baked in large rectangular trays']
-    },
-    {
-      name: 'Pizza bread',
-      toppingsStrArr: ['Ingredients and shape vary', 'no tomato sauce is used']
+      toppingsStrArr: ['Tomato Sauce', 'Mozzarella', 'Hot Salami']
     },
     {
       name: 'Prosciutto',
-      toppingsStrArr: ['Tomato sauce', 'Mozzarella', 'Prosciutto (Italian ham)']
+      toppingsStrArr: ['Tomato Sauce', 'Mozzarella', 'Prosciutto']
     },
     {
       name: 'Prosciutto e funghi',
-      toppingsStrArr: ['Tomato sauce', 'Mozzarella', 'Prosciutto', 'Mushrooms']
+      toppingsStrArr: ['Tomato Sauce', 'Mozzarella', 'Prosciutto', 'Mushrooms']
     },
     {
       name: 'Pugliese',
-      toppingsStrArr: ['Tomato sauce', 'Mozzarella and Onions']
+      toppingsStrArr: ['Tomato Sauce', 'Mozzarella', 'Onion']
     },
     {
       name: 'Quattro Formaggi',
-      toppingsStrArr: ['Tomato Sauce', 'Mozzarella', 'Gorgonzola Piccante', 'Parmigiano Reggiano', 'Pecorino']
+      toppingsStrArr: ['Tomato Sauce', 'Mozzarella', 'Gorgonzola', 'Parmigiano Reggiano', 'Pecorino Romano']
     },
     {
       name: 'Quattro Stationi',
-      toppingsStrArr: ['Four Seasons Pizza with Tomato Sauce', 'Mozzarella', 'Parmesan', 'Basil', 'Mushrooms', 'Artichokes', 'Cooked ham', 'Olives']
+      toppingsStrArr: ['Tomato Sauce', 'Mozzarella', 'Parmigiano Reggiano', 'Basil', 'Mushrooms', 'Artichokes', 'Prosciutto', 'Olives']
     },
     {
       name: 'Regina',
-      toppingsStrArr: ['Tomato sauce', 'Mozzarella', 'Ham', 'Champignons']
+      toppingsStrArr: ['Tomato Sauce', 'Mozzarella', 'Prosciutto', 'Mushrooms']
     },
     {
       name: 'Romana',
-      toppingsStrArr: ['Tomato sauce', 'Mozzarella', 'Anchovies', 'Oregano', 'Olive oil']
-    },
-    {
-      name: 'Rusticana',
-      toppingsStrArr: ['Tomato sauce', 'Buffalo ricotta', 'Oyster mushrooms']
+      toppingsStrArr: ['Tomato Sauce', 'Mozzarella', 'Anchovies', 'Oregano', 'Olive Oil']
     },
     {
       name: 'Salame',
-      toppingsStrArr: ['Tomato sauce', 'Mozzarella', 'Italian salami']
+      toppingsStrArr: ['Tomato Sauce', 'Mozzarella', 'Salami']
     },
     {
       name: 'Salmone',
-      toppingsStrArr: ['Tomato sauce', 'Mascarpone cheese', 'Smoked salmon and rocket salad (arugula)']
+      toppingsStrArr: ['Tomato Sauce', 'Mascarpone', 'Smoked Salmon', 'Arugula']
     },
     {
       name: 'Salsiccia',
-      toppingsStrArr: ['Tomato sauce', 'Mozzarella', 'Salsiccia', 'Radicchio Trevisano']
+      toppingsStrArr: ['Tomato Sauce', 'Mozzarella', 'Salsiccia', 'Radicchio Trevisano']
     },
     {
       name: 'Sardenaira (Pizza all’Andrea)',
-      toppingsStrArr: ['Tomato sauce', 'Salted anchovies', 'Olives', 'Garlic cloves', 'Capers']
+      toppingsStrArr: ['Tomato Sauce', 'Anchovies', 'Olives', 'Garlic', 'Capers']
     },
     {
       name: 'Siciliana',
-      toppingsStrArr: ['Tomato sauce', 'Mozzarella', 'Garlic', 'Salami', 'Hot peppers', 'Olive oil']
-    },
-    {
-      name: 'Siciliana Bianca',
-      toppingsStrArr: ['Four cheese', 'Anchovies', 'Capers']
+      toppingsStrArr: ['Tomato Sauce', 'Mozzarella', 'Garlic', 'Salami', 'Chili Peppers', 'Olive Oil']
     },
     {
       name: 'Speziale',
-      toppingsStrArr: ['Tomato sauce', 'Mozzarella', 'Ham', 'Salami', 'Champignons', 'Olives', 'Artichoke']
+      toppingsStrArr: ['Tomato Sauce', 'Mozzarella', 'Prosciutto', 'Salami', 'Mushrooms', 'Olives', 'Artichokes']
     },
     {
       name: 'Spinaci',
-      toppingsStrArr: ['Tomato sauce', 'Mozzarella', 'Spinach', 'Salt', 'Pepper', 'Olive oil']
+      toppingsStrArr: ['Tomato Sauce', 'Mozzarella', 'Spinach', 'Black Pepper', 'Olive Oil']
     },
     {
       name: 'Spinaci e Uovo',
-      toppingsStrArr: ['Tomato sauce', 'Mozzarella', 'Spinach', 'Salt', 'Pepper', 'Olive oil', 'Egg']
+      toppingsStrArr: ['Tomato Sauce', 'Mozzarella', 'Spinach', 'Black Pepper', 'Olive Oil', 'Egg']
     },
     {
       name: 'Spinaci e Gorgonzola',
-      toppingsStrArr: ['Tomato sauce', 'Gorgonzola', 'Spinach']
+      toppingsStrArr: ['Tomato Sauce', 'Gorgonzola', 'Spinach']
     },
     {
       name: 'Tartufata',
-      toppingsStrArr: ['Mozzarella', 'Mushrooms', 'Oyster mushrooms', 'Arugula', 'Parmesan', 'Truffle oil']
+      toppingsStrArr: ['Mozzarella', 'Mushrooms', 'Arugula', 'Parmigiano Reggiano', 'Truffle Oil']
     },
     {
       name: 'Tirolese',
-      toppingsStrArr: ['Tomato sauce', 'Stracchino cheese', 'Speck (smoked ham)', 'sometimes mushrooms']
+      toppingsStrArr: ['Tomato Sauce', 'Stracchino', 'Smoked Ham', 'Mushrooms']
     },
     {
       name: 'Tonno (al Tonno)',
-      toppingsStrArr: ['Tomato sauce', 'Mozzarella', 'Tuna']
+      toppingsStrArr: ['Tomato Sauce', 'Mozzarella', 'Tuna']
     },
     {
       name: 'Tonno e Cipola',
-      toppingsStrArr: ['Tomato sauce', 'Mozzarella', 'Tuna', 'Onions']
+      toppingsStrArr: ['Tomato Sauce', 'Mozzarella', 'Tuna', 'Onion']
     },
     {
       name: 'Toscana',
-      toppingsStrArr: ['Tomato sauce', 'Pecorino cheese', 'Bell pepper', 'Anchovies or tuna', 'Fresh basil leafes']
+      toppingsStrArr: ['Tomato Sauce', 'Pecorino Romano', 'Pepper', 'Anchovies', 'Basil']
     },
     {
-      name: 'Vegetariana (Verdure, Ortolana)',
-      toppingsStrArr: ['Tomato sauce', 'Mozzarella', 'Vegetables']
+      name: 'Ortolana',
+      toppingsStrArr: ['Tomato Sauce', 'Mozzarella', 'Zucchini', 'Eggplant', 'Basil']
     },
     {
       name: 'Viennese',
-      toppingsStrArr: ['Tomato sauce', 'Mozzarella', 'German sausage', 'Oregano', 'Olive oil']
+      toppingsStrArr: ['Tomato Sauce', 'Mozzarella', 'Wurstel', 'Oregano', 'Olive Oil']
     },
     {
       name: 'Vitello Tonnato',
-      toppingsStrArr: ['Tomato sauce', 'Capers', 'Arugula', 'Veal schnitzel', 'Anchovy fillets', 'Garlic', 'Black pepper']
+      toppingsStrArr: ['Tomato Sauce', 'Capers', 'Arugula', 'Veal', 'Anchovies', 'Garlic', 'Black Pepper']
     }
   ]
 
 
   allToppings : Topping[] = [
     {name:'Tomato Sauce', type: "basics"},
-    {name: 'Mozzarella', type: "cheese"},
-    {name: 'Onions', type: "vegetable"},
-    {name: 'Oregano', type: "basics"},
-    {name: 'Broccoli', type: "vegetable"},
-    {name: 'Garlic', type: "vegetable"},
-    {name: 'Chili Peppers', type: "vegetable"},
+    {name:'Mozzarella', type: "basics"},
+    {name:'Olive Oil', type: "basics"},
+    {name:'Basil', type: "basics"},
+    {name:'Oregano', type: "basics"},
+    {name:'Garlic', type: "basics"},
+    {name:'Onion', type: "basics"},
+    {name:'Black Pepper', type: "basics"},
+
+
+    {name:'Broccoli', type: "vegetable"},
+    {name:'Chili Peppers', type: "vegetable"},
+    {name:'Olives', type: "vegetable"},
+    {name:'Tomato', type: "vegetable"},
+    {name:'Cherry Tomatoes', type: "vegetable"},
+    {name:'Capers', type: "vegetable"},
+    {name:'Arugula', type: "vegetable"},
+    {name:'Mushrooms', type: "vegetable"},
+    {name:'Artichokes', type: "vegetable"},
+    {name:'Mushrooms', type: "vegetable"},
+    {name:'Spinach', type: "vegetable"},
+    {name:'Eggplant', type: "vegetable"},
+    {name:'Parsley', type: "vegetable"},
+    {name:'Pepper', type: "vegetable"},
+    {name:'Corn', type: "vegetable"},
+    {name:'Radicchio Trevisano', type: "vegetable"},
+    {name:'Zucchini', type: "vegetable"},
+
+
+    {name:'Buffalo Mozzarella', type: "cheese"},
+    {name:'Parmigiano Reggiano', type: "cheese"},
+    {name:'Pecorino Romano', type: "cheese"},
+    {name:'Goats Cheese', type: "cheese"},
+    {name:'Ricotta', type: "cheese"},
+    {name:'Gorgonzola', type: "cheese"},
+    {name:'Mascarpone', type: "cheese"},
+    {name:'Stracchino', type: "cheese"},
+
+    {name:'Anchovies', type: "fish"},
+    {name:'Tuna', type: "fish"},
+    {name:'Clams', type: "fish"},
+    {name:'Shrimps', type: "fish"},
+    {name:'Salmon', type: "fish"},
+    {name:'Smoked Salmon', type: "fish"},
+    {name:'Mussels', type: "fish"},
+    {name:'Prawns', type: "fish"},
+
+    {name:'Hot Salami', type: "meats"},
+    {name:'Beef carpaccio', type: "meats"},
+    {name:'Salami', type: "meats"},
+    {name:'Spianata Calabrese', type: "meats"},
+    {name:'Bacon', type: "meats"},
+    {name:'Prosciutto', type: "meats"},
+    {name:'Parma Ham', type: "meats"},
+    {name:'Smoked Ham', type: "meats"},
+    {name:'Salsiccia', type: "meats"},
+    {name:'Wurstel', type: "meats"},
+    {name:'Veal', type: "meats"},
+
+    {name:'Chili Powder', type: "other"},
+    {name:'Egg', type: "other"},
+    {name:'Heavy Cream', type: "other"},
+    {name:'Bolognese Sauce', type: "other"},
+    {name:'Marinara Sauce', type: "other"},
+    {name:'Grilled Vegetables', type: "other"},
+    {name:'Truffle Oil', type: "other"},
+
+
   ].map(topping => ({
     ...topping,
     isAvailable: false,
